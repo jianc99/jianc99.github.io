@@ -3,7 +3,7 @@
   primary_url: https://arxiv.org/abs/2602.06036
   venue: "arXiv 2026"
   authors_html: "<strong>Jian Chen</strong>, Yesheng Liang, Zhijian Liu"
-  summary: "A speculative decoding framework that uses a lightweight block diffusion draft model for parallel drafting, improving acceptance rates and delivering over 6x lossless acceleration."
+  summary: "Speculative decoding with block diffusion for high-quality, ultra-fast parallel drafting and up to 6x lossless speedup."
   github_repo: https://github.com/z-lab/dflash
   github_repo_slug: z-lab/dflash
   github_stars: 628
@@ -20,7 +20,7 @@
   primary_url: https://arxiv.org/abs/2408.11049
   venue: "ICLR 2025"
   authors_html: "<strong>Jian Chen*</strong>, Vashisth Tiwari*, Ranajoy Sadhukhan*, Zhuoming Chen, Jinyuan Shi, Ian En-Hsu Yen, Beidi Chen"
-  summary: "A study of LLM inference and speculative decoding that shows how the right speculation strategy can improve both latency and throughput for moderate to long generations."
+  summary: "Long-context speculative decoding that breaks the latency-throughput tradeoff with sparse-KV drafting."
   github_repo: https://github.com/Infini-AI-Lab/MagicDec
   github_repo_slug: Infini-AI-Lab/MagicDec
   github_stars: 143
