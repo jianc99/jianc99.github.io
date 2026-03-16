@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jian Chen</title>
+    <meta name="author" content="Jian Chen">
+    <meta
+      name="description"
+      content="Jian Chen is a Ph.D. student at UC San Diego working on efficient large language models and scalable machine learning systems."
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheet.css">
+  </head>
+  <body>
+    <div class="site-shell">
+  <main class="site-main">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Jian Chen</h1>
+        <p class="hero-summary">
+          I am a first-year Ph.D. student at
+          <a href="https://www.ucsd.edu/">UC San Diego</a>,
+          where I work on efficient machine learning with Prof.
+          <a href="https://zhijianliu.com/">Zhijian Liu</a>.
+        </p>
+        <p class="hero-summary hero-summary-secondary">
+          Previously, I completed my master's degree at
+          <a href="https://www.cmu.edu/">CMU</a>,
+          where I worked with Prof.
+          <a href="https://www.andrew.cmu.edu/user/beidic/">Beidi Chen</a>
+          on efficient long-context LLM. I received my bachelor's degree from
+          <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.
+        </p>
+        <ul class="topic-list" aria-label="Research focus areas">
+          <li>Efficient AI</li>
+          <li>Inference Systems</li>
+          <li>Long-Context LLM</li>
+        </ul>
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="mailto:jianc@ucsd.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=hjxFO34AAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/jianc99">GitHub</a>
+          <a href="https://x.com/jianchen1799">X</a>
+          <a href="https://www.linkedin.com/in/jian-chen99/">LinkedIn</a>
+        </nav>
+      </div>
+      <figure class="portrait">
+        <img src="/images/my_photo.jpg" alt="Portrait of Jian Chen">
+      </figure>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Recent work</h2>
+      </div>
+
+      <div class="publication-list">
+        
+        <article class="publication">
+          <div class="publication-header">
+            <p class="publication-venue">arXiv 2026</p>
+            <div class="publication-title-row">
+              <h3>
+                <a href="https://arxiv.org/abs/2602.06036">DFlash: Block Diffusion for Flash Speculative Decoding</a>
+              </h3>
+              
+              <a
+                class="repo-stars"
+                href="https://github.com/z-lab/dflash"
+                data-github-repo="z-lab/dflash"
+                aria-label="DFlash GitHub stars"
+              >
+                <span class="repo-stars-icon" aria-hidden="true">★</span>
+                <span class="repo-stars-count">628</span>
+              </a>
+              
+            </div>
+          </div>
+          <p class="publication-authors"><strong>Jian Chen</strong>, Yesheng Liang, Zhijian Liu</p>
+          <div class="publication-links" aria-label="DFlash links">
+            
+            <a href="https://z-lab.ai/projects/dflash/">Blog</a>
+            
+            <a href="https://arxiv.org/abs/2602.06036">ArXiv</a>
+            
+            <a href="https://github.com/z-lab/dflash">Code</a>
+            
+          </div>
+          <p class="publication-summary">A speculative decoding framework that uses a lightweight block diffusion draft model for parallel drafting, improving acceptance rates and delivering over 6x lossless acceleration.</p>
+        </article>
+        
+        <article class="publication">
+          <div class="publication-header">
+            <p class="publication-venue">ICLR 2025</p>
+            <div class="publication-title-row">
+              <h3>
+                <a href="https://arxiv.org/abs/2408.11049">MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding</a>
+              </h3>
+              
+              <a
+                class="repo-stars"
+                href="https://github.com/Infini-AI-Lab/MagicDec"
+                data-github-repo="Infini-AI-Lab/MagicDec"
+                aria-label="MagicDec GitHub stars"
+              >
+                <span class="repo-stars-icon" aria-hidden="true">★</span>
+                <span class="repo-stars-count">143</span>
+              </a>
+              
+            </div>
+          </div>
+          <p class="publication-authors"><strong>Jian Chen*</strong>, Vashisth Tiwari*, Ranajoy Sadhukhan*, Zhuoming Chen, Jinyuan Shi, Ian En-Hsu Yen, Beidi Chen</p>
+          <div class="publication-links" aria-label="MagicDec links">
+            
+            <a href="https://infini-ai-lab.github.io/MagicDec/">Blog</a>
+            
+            <a href="https://arxiv.org/abs/2408.11049">ArXiv</a>
+            
+            <a href="https://github.com/Infini-AI-Lab/MagicDec/">Code</a>
+            
+          </div>
+          <p class="publication-summary">A study of LLM inference and speculative decoding that shows how the right speculation strategy can improve both latency and throughput for moderate to long generations.</p>
+        </article>
+        
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Last updated March 15, 2026.</p>
+    </footer>
+  </main>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const starBadges = document.querySelectorAll("[data-github-repo]");
+
+    starBadges.forEach(async (badge) => {
+      const repo = badge.getAttribute("data-github-repo");
+      const countNode = badge.querySelector(".repo-stars-count");
+
+      if (!repo || !countNode) {
+        return;
+      }
+
+      try {
+        const response = await fetch(`https://api.github.com/repos/${repo}`, {
+          headers: { Accept: "application/vnd.github+json" }
+        });
+
+        if (!response.ok) {
+          return;
+        }
+
+        const data = await response.json();
+
+        if (typeof data.stargazers_count === "number") {
+          countNode.textContent = data.stargazers_count.toLocaleString();
+        }
+      } catch (error) {
+        // Keep the fallback count when GitHub is unavailable or rate-limits.
+      }
+    });
+  });
+</script>
+
+  </body>
+</html>

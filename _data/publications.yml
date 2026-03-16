@@ -1,0 +1,33 @@
+- short_title: DFlash
+  title: "DFlash: Block Diffusion for Flash Speculative Decoding"
+  primary_url: https://arxiv.org/abs/2602.06036
+  venue: "arXiv 2026"
+  authors_html: "<strong>Jian Chen</strong>, Yesheng Liang, Zhijian Liu"
+  summary: "A speculative decoding framework that uses a lightweight block diffusion draft model for parallel drafting, improving acceptance rates and delivering over 6x lossless acceleration."
+  github_repo: https://github.com/z-lab/dflash
+  github_repo_slug: z-lab/dflash
+  github_stars: 628
+  links:
+    - label: Blog
+      url: https://z-lab.ai/projects/dflash/
+    - label: ArXiv
+      url: https://arxiv.org/abs/2602.06036
+    - label: Code
+      url: https://github.com/z-lab/dflash
+
+- short_title: MagicDec
+  title: "MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding"
+  primary_url: https://arxiv.org/abs/2408.11049
+  venue: "ICLR 2025"
+  authors_html: "<strong>Jian Chen*</strong>, Vashisth Tiwari*, Ranajoy Sadhukhan*, Zhuoming Chen, Jinyuan Shi, Ian En-Hsu Yen, Beidi Chen"
+  summary: "A study of LLM inference and speculative decoding that shows how the right speculation strategy can improve both latency and throughput for moderate to long generations."
+  github_repo: https://github.com/Infini-AI-Lab/MagicDec
+  github_repo_slug: Infini-AI-Lab/MagicDec
+  github_stars: 143
+  links:
+    - label: Blog
+      url: https://infini-ai-lab.github.io/MagicDec/
+    - label: ArXiv
+      url: https://arxiv.org/abs/2408.11049
+    - label: Code
+      url: https://github.com/Infini-AI-Lab/MagicDec/
