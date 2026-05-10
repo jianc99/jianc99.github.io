@@ -1,7 +1,7 @@
 - short_title: DFlash
   title: "DFlash: Block Diffusion for Flash Speculative Decoding"
   primary_url: https://arxiv.org/abs/2602.06036
-  venue: "arXiv 2026"
+  venue: "ICML 2026"
   authors_html: "<strong>Jian Chen</strong>, Yesheng Liang, Zhijian Liu"
   summary: "Speculative decoding with block diffusion for high-quality, ultra-fast parallel drafting and up to 6x lossless speedup."
   github_repo: https://github.com/z-lab/dflash
