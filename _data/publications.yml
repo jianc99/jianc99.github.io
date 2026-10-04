@@ -1,3 +1,16 @@
+- short_title: Splash
+  title: "Splash: A Local Engine Built Around the Model"
+  primary_url: https://inco.ai/blog/splash/
+  summary: "An inference engine for Apple silicon, combining DFlash 2 and model-specific Metal kernels for fast, private LLM inference."
+  github_repo: https://github.com/incoai/splash
+  github_repo_slug: incoai/splash
+  github_stars: 568
+  links:
+    - label: Blog
+      url: https://inco.ai/blog/splash/
+    - label: Code
+      url: https://github.com/incoai/splash
+
 - short_title: DFlash
   title: "DFlash: Block Diffusion for Flash Speculative Decoding"
   primary_url: https://arxiv.org/abs/2602.06036
